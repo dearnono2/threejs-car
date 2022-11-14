@@ -24,11 +24,11 @@ function Dragable(props) {
     controlRef.current.addEventListener('dragstart', e => {
       console.log(e.object);
     })
-  }, [Children])
+  })
 
   return (
     <group ref={groupRef}>
-      <dragControls ref={controlRef} args={[Children, camera, gl.domElement]} />
+      <dragControls ref={controlRef} args={[Children, camera, gl.domElement]} transformGroup={props.transformGroup} />
       {props.children}
     </group>
   )
