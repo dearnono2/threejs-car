@@ -21,10 +21,8 @@ function Txt({ index }) {
     boxs[index].classList.add('on');
   }
 
-  useEffect(() => {
-    init();
-    activation();
-  }, [index])
+  useEffect(init, [])
+  useEffect(activation, [index])
 
   return (
     <section className='txt' ref={txt}>
