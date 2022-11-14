@@ -9,8 +9,8 @@ function Txt({ index }) {
       const tit = box.querySelector('h2');
       const tit_txt = tit.innerText;
       let newTags = '';
-
-      for (const type of tit_txt) newTags += `<span>${type}</span>`;
+      let count = 0;
+      for (const type of tit_txt) newTags += `<span style='transition-delay: ${0.1 * count++}s'>${type}</span>`;
       tit.innerHTML = newTags;
     })
   }

@@ -33,17 +33,28 @@ figure {
 			right: 10vw;
 			top: 30vh;
 			z-index: 2;
-			opacity: 0;
+			opacity: 1;
 			transition: 0.5s;
 
 			h2 {
 				font: normal italic 9vw/1 'Henny Penny';
 				color: #444;
-				//text-transform: uppercase;
+				span {
+          display: inline-block;
+          opacity: 0;
+          transform: scale(3);
+          transition-duration: 0.5s;
+          transition-timing-function: cubic-bezier(0.48, -0.69, 0.53, 1.59);
+        }
 			}
 
 			&.on {
-				opacity: 1;
+				h2 {
+          span {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
 			}
 
 			&:nth-of-type(1) {
