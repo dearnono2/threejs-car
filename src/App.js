@@ -11,7 +11,7 @@ function App() {
 
 	return (
 		<figure>
-			<Canvas shadowMap style={{ background: '#111' }} camera={{ position: [7, 7, 7] }}>
+			<Canvas shadowMap style={{ background: '#cdcfd3' }} camera={{ position: [7, 7, 7] }}>
 				<Orbit />
 				<axesHelper args={[5]} />
 
