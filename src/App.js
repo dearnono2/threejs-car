@@ -18,11 +18,11 @@ function App() {
 		<figure>
 			<Canvas shadowMap style={{ background: '#cdcfd3' }} camera={{ position: [7, 7, 7] }}>
 				<Orbit />
-				<axesHelper args={[5]} />
+				{/* <axesHelper args={[5]} /> */}
 				<CameraControls />
 
 				<Suspense fallback={null}>
-					<Model path={process.env.PUBLIC_URL + '/car/scene.gltf'} position={[0, 0, 0]} scale={1} />
+					<Model path={process.env.PUBLIC_URL + '/car/scene.gltf'} position={[0, -1, 4]} scale={1} />
 				</Suspense>
 			</Canvas>
 
