@@ -4,6 +4,7 @@ import { Canvas, extend } from 'react-three-fiber';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { Suspense } from 'react';
 import { useState } from 'react';
+import Dragable from './components/Dragable';
 import Orbit from './components/Orbit';
 import Model from './components/Model';
 import CameraControls from './components/CameraControls';
@@ -22,9 +23,11 @@ function App() {
 				{/* <axesHelper args={[5]} /> */}
 				<CameraControls />
 
-				<Suspense fallback={null}>
-					<Model path={process.env.PUBLIC_URL + '/car/scene.gltf'} position={[0, -1, 4]} scale={1} />
-				</Suspense>
+				<Dragable>
+					<Suspense fallback={null}>
+						<Model path={process.env.PUBLIC_URL + '/car/scene.gltf'} position={[0, -1, 4]} scale={1} />
+					</Suspense>
+				</Dragable>
 			</Canvas>
 
 			<Txt index={Index} />
