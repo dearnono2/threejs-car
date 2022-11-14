@@ -9,6 +9,7 @@ function ColorPicker() {
     state.activeMesh.material.color = new THREE.Color(e.target.getAttribute('data-color'))
   }
 
+  //버튼에 보여질 색상
   const showColor = ['#bdf2ee', '#c2e699', '#c9c0f5'];
 
   return (
