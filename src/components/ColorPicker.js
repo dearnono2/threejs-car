@@ -6,14 +6,16 @@ function ColorPicker() {
   //컬러픽커 클릭시 클릭한 버튼의 배경색으로 해당 mesh요소의 색상을 변경
   const handleClick = e => {
     if (!state.activeMesh) return;
-    state.activeMesh.material.color = new THREE.Color(e.target.style.backgroundColor)
+    state.activeMesh.material.color = new THREE.Color(e.target.getAttribute('data-color'))
   }
+
+  const showColor = ['#bdf2ee', '#c2e699', '#c9c0f5'];
 
   return (
     <ul className='colorPicker'>
-      {['red', 'green', 'blue', 'transparent'].map(color => {
+      {['transparent', '#fcfc81', '#ea9dff'].map((color, index) => {
         return (
-          <li key={color} style={{ backgroundColor: color }} onClick={handleClick}>{color}</li>
+          <li key={color} data-color={color} style={{ backgroundColor: showColor[index] }} onClick={handleClick}></li>
         )
       })}
     </ul>

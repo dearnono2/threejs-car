@@ -138,4 +138,19 @@ figure {
 			}
 		}
   }
+
+  .colorPicker {
+    position: absolute;
+    bottom: 10vh;
+    right: 10vw;
+    z-index: 2;
+    display: flex;
+
+    li {
+      width: 100px;
+      height: 10px;
+      border: 1px solid #222;
+      cursor: pointer;
+    }
+  }
 }
