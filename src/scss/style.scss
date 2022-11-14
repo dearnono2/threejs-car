@@ -15,7 +15,7 @@ figure {
     gap: 60px;
     
     li {
-      font: 20px/1 'Fredericka the Great';
+      font: 20px/1 'Architects Daughter';
       color: #222;
       cursor: pointer;
       transition: 0.5s;
@@ -32,7 +32,7 @@ figure {
 			position: absolute;
 			right: 10vw;
 			top: 30vh;
-			z-index: 2;
+			z-index: -1;
 			opacity: 1;
 			transition: 0.5s;
 
@@ -49,6 +49,7 @@ figure {
 			}
 
 			&.on {
+        z-index: 2;
 				h2 {
           span {
             opacity: 1;

@@ -4,6 +4,8 @@ import { useRef } from 'react';
 function CameraBtns({ setIndex }) {
   const btns = useRef(null);
 
+  const text = ['Consect', 'Dolor', 'Lorem', 'Sit amet', 'Adipisic', 'Corporis'];
+
   const pos = {
     0: {
       cameraPos: [7, 0, 7],
@@ -44,15 +46,11 @@ function CameraBtns({ setIndex }) {
 
   return (
     <ul className='cameraBtns' ref={btns}>
-      {Array(6).fill().map((_, idx) => {
+      {text.map((data, idx) => {
         let isOn = '';
         if (idx === 0) isOn = 'on';
-
-        return (
-          <li key={idx} className={isOn} onClick={() => handleClick(idx)}>{`view${idx + 1}`}</li>)
-      }
-      )
-      }
+        return <li key={idx} className={isOn} onClick={() => handleClick(idx)}>{data}</li>
+      })}
     </ul>
   );
 }
