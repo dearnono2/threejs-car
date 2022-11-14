@@ -6,6 +6,7 @@ import { Suspense } from 'react';
 import Orbit from './components/Orbit';
 import Model from './components/Model';
 import CameraControls from './components/CameraControls';
+import CameraBtns from './components/CameraBtns';
 extend({ OrbitControls });
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
 					<Model path={process.env.PUBLIC_URL + '/car/scene.gltf'} position={[0, 0, 0]} scale={1} />
 				</Suspense>
 			</Canvas>
+
+			<CameraBtns />
 		</figure>
 	);
 }
