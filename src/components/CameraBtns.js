@@ -1,6 +1,6 @@
 import state from '../state';
 
-function CameraBtns() {
+function CameraBtns({ setIndex }) {
   const pos = {
     0: {
       cameraPos: [7, 0, 7],
@@ -32,6 +32,7 @@ function CameraBtns() {
     state.cameraPos.set(...pos[index].cameraPos);
     state.target.set(...pos[index].target);
     state.shouldUpdate = true;
+    setIndex(index);
   }
 
   return (

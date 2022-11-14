@@ -3,13 +3,16 @@ import './scss/style.scss';
 import { Canvas, extend } from 'react-three-fiber';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { Suspense } from 'react';
+import { useState } from 'react';
 import Orbit from './components/Orbit';
 import Model from './components/Model';
 import CameraControls from './components/CameraControls';
 import CameraBtns from './components/CameraBtns';
+import Txt from './components/Txt';
 extend({ OrbitControls });
 
 function App() {
+	const [Index, setIndex] = useState(0);
 
 	return (
 		<figure>
@@ -23,7 +26,8 @@ function App() {
 				</Suspense>
 			</Canvas>
 
-			<CameraBtns />
+			<Txt index={Index} />
+			<CameraBtns setIndex={setIndex} />
 		</figure>
 	);
 }
