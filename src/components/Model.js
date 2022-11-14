@@ -8,7 +8,7 @@ function Model(props) {
   //해당 nodes값이 변경되지 않으면 추후 다른 state값이 변경되더라도 해당 3d오브제를 다시 연산하지 않도록
   //import 된 3d 요소들을 메모이제이션처리
   useMemo(() => {
-    console.log(nodes);
+    //console.log(nodes);
     const parts = Object.values(nodes);
     //console.log(parts);
     parts.forEach(obj => {
