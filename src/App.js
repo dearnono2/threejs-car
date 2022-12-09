@@ -19,7 +19,7 @@ function App() {
 
 	return (
 		<figure>
-			<h1>My Car</h1>
+			<h1>Three.js Car</h1>
 			<Canvas shadowMap style={{ background: '#cdcfd3' }} camera={{ position: [7, 7, 7] }}>
 				<Orbit />
 				{/* <axesHelper args={[5]} /> */}
