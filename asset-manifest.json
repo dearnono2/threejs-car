@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/threejs-car/static/css/main.947c2be5.chunk.css",
-    "main.js": "/threejs-car/static/js/main.f6849113.chunk.js",
-    "main.js.map": "/threejs-car/static/js/main.f6849113.chunk.js.map",
+    "main.js": "/threejs-car/static/js/main.4e16f713.chunk.js",
+    "main.js.map": "/threejs-car/static/js/main.4e16f713.chunk.js.map",
     "runtime-main.js": "/threejs-car/static/js/runtime-main.f274e3fb.js",
     "runtime-main.js.map": "/threejs-car/static/js/runtime-main.f274e3fb.js.map",
     "static/js/2.67f6d8ce.chunk.js": "/threejs-car/static/js/2.67f6d8ce.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.f274e3fb.js",
     "static/js/2.67f6d8ce.chunk.js",
     "static/css/main.947c2be5.chunk.css",
-    "static/js/main.f6849113.chunk.js"
+    "static/js/main.4e16f713.chunk.js"
   ]
 }
